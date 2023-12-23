@@ -1,0 +1,41 @@
+/* services card hovereffect */
+#servicescards ul li:hover{
+    background-color:lightgrey;
+ }
+ .card-img-overlay {
+         transition: 0.3s ease-in-out;
+         opacity: 0;
+         background-color: rgba(0, 0, 0, 0.5);
+         color: white;
+         text-align: center;
+     }
+
+     .card:hover .card-img-overlay {
+         opacity: 1;
+     }
+/* media queries for Premium Membership and Basic Membership */
+
+.card {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 768px) {
+    /* For small devices (576px and below) */
+    #membership-container .card-body {
+      height: 350px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* For medium devices (768px and up to 991px) */
+    #membership-container .card-body {
+      height: 400px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    /* For large devices (992px and up) */
+    #membership-container .card-body {
+      height: 350px;
+    }
+  }
+
